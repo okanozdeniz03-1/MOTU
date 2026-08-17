@@ -3,52 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MOTU</title>
+<title>MOTU MAKER</title>
+
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #111111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background: #f4f1ec;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
-    width: 90%;
-    max-width: 420px;
+    width: 92%;
+    max-width: 560px;
+    margin: auto;
+    padding: 45px 0 35px;
     text-align: center;
 }
-h1 {
-    font-size: 32px;
-    margin-bottom: 35px;
+
+.logo {
+    width: 280px;
+    max-width: 85%;
+    margin-bottom: 8px;
 }
-a {
-    display: block;
+
+.tagline {
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #444;
+    margin-bottom: 45px;
+}
+
+.tagline span {
+    color: #f36c21;
+}
+
+.link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #111111;
-    border: 2px solid #111111;
-    padding: 18px;
-    margin: 15px 0;
-    border-radius: 10px;
+    color: #222;
+    background: #e5e1da;
+    border: 1px solid #d2cdc4;
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin: 18px 0;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: #f36c21;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.text {
+    text-align: left;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #666;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #222;
+    margin-left: 10px;
+}
+
+.footer {
+    margin-top: 55px;
     font-size: 18px;
-    font-weight: bold;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding-top: 30px;
+    }
+
+    .logo {
+        width: 230px;
+    }
+
+    .tagline {
+        font-size: 11px;
+        letter-spacing: 3px;
+        margin-bottom: 35px;
+    }
+
+    .link {
+        padding: 18px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 23px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
-    <h1>MOTU</h1>
 
-    <a href="https://iskenderpala.kutuphane.gov.tr/">
-        İskender Pala İl Halk Kütüphanesi
+    <img src="Logo.jpeg" class="logo" alt="MOTU MAKER">
+
+    <div class="tagline">
+        DESIGN <span>•</span> CREATE <span>•</span> BUILD
+    </div>
+
+    <a class="link"
+       href="https://iskenderpala.kutuphane.gov.tr/"
+       target="_blank">
+
+        <div class="icon">📖</div>
+
+        <div class="text">
+            <div class="title">İskender Pala</div>
+            <div class="subtitle">İl Halk Kütüphanesi</div>
+        </div>
+
+        <div class="arrow">›</div>
+
     </a>
 
-    <a href="https://www.instagram.com/motu_maker/">
-        Motu Maker Instagram
+    <a class="link"
+       href="https://www.instagram.com/motu_maker/"
+       target="_blank">
+
+        <div class="icon">◎</div>
+
+        <div class="text">
+            <div class="title">Motu Maker</div>
+            <div class="subtitle">Instagram</div>
+        </div>
+
+        <div class="arrow">›</div>
+
     </a>
+
+    <div class="footer">
+        OKAN ÖZDENİZ
+    </div>
+
 </div>
 
 </body>
