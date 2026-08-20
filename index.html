@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    background: #f4f1ec;
+    background: linear-gradient(to bottom, #f36c21, #f4f1ec); /* turuncudan beje geçiş */
     color: #222;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,31 +27,28 @@ body {
 
 .logo {
     display: block;
-    width: 100%;              /* link kartlarıyla aynı genişlik */
-    max-width: none;          /* sınırı kaldırıyoruz */
+    width: 100%;
+    max-width: none;
     margin-bottom: 18px;
-    background-color: #fff;   /* beyaz arka plan */
-    padding: 12px;            /* iç boşluk */
-    border: 1px solid #d2cdc4; /* kartlarla aynı kenarlık */
-    border-radius: 18px;       /* kartlarla aynı köşe yuvarlama */
-    box-shadow: 0 8px 22px rgba(0,0,0,0.08); /* kartlarla aynı gölge */
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
     transition: 0.2s;
 }
 
 .logo:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(0,0,0,0.12); /* hover efekti */
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
 }
 
 .tagline {
     font-size: 13px;
     letter-spacing: 5px;
-    color: #444;
+    color: #fff; /* turuncu üst kısımda kontrast için beyaz */
     margin-bottom: 45px;
 }
 
 .tagline span {
-    color: #f36c21;
+    color: #fff;
 }
 
 .link {
@@ -114,18 +111,12 @@ body {
     font-size: 18px;
     letter-spacing: 5px;
     font-weight: 500;
-    color: #333;
+    color: #fff; /* turuncu üst kısımda kontrast için beyaz */
 }
 
 @media (max-width: 480px) {
-
     .container {
         padding-top: 30px;
-    }
-
-    .logo {
-        width: 100%;   /* mobilde link kartlarıyla aynı genişlik */
-        max-width: none;
     }
 
     .tagline {
