@@ -26,13 +26,13 @@ body {
 }
 
 .logo {
-    width: 340px;             /* büyütülmüş logo */
-    max-width: 95%;
+    width: 100%;             /* container genişliğini kaplar */
+    max-width: 420px;        /* masaüstünde üst sınır */
     margin-bottom: 12px;
-    border-radius: 50%;       /* oval/daire görünüm */
     background-color: #fff;   /* beyaz arka plan */
     padding: 12px;            /* iç boşluk */
-    border: 2px solid #f36c21; /* turuncu çerçeve */
+    border: 3px solid #f36c21; /* turuncu çerçeve (biraz kalın) */
+    /* border-radius kaldırıldı → kare görünüm */
 }
 
 .tagline {
@@ -116,7 +116,8 @@ body {
     }
 
     .logo {
-        width: 280px;   /* mobilde biraz daha küçük */
+        width: 90%;   /* mobilde daha dengeli */
+        max-width: 300px;
     }
 
     .tagline {
