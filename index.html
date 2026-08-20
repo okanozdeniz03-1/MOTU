@@ -31,7 +31,7 @@ body {
     width: 100%;
     margin-bottom: 18px;
     border-radius: 18px;
-    box-shadow: 0 0 12px rgba(243,108,33,0.6); /* turuncu glow */
+    box-shadow: 0 0 12px rgba(243,108,33,0.6);
     transition: 0.2s;
 }
 .logo:hover {
@@ -71,7 +71,6 @@ body {
     width: 58px;
     height: 58px;
     border-radius: 14px;
-    background: #f36c21;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +79,6 @@ body {
 .icon svg {
     width: 28px;
     height: 28px;
-    fill: #fff;
 }
 
 .text {
@@ -90,7 +88,7 @@ body {
 }
 .title {
     font-size: 20px;
-    font-weight: 600; /* bold Raleway */
+    font-weight: 600;
     margin-bottom: 5px;
 }
 .subtitle {
@@ -108,28 +106,12 @@ body {
     margin-top: 55px;
     font-size: 22px;
     letter-spacing: 6px;
-    font-weight: 400; /* ince Raleway */
+    font-weight: 400;
     color: #fff;
     background: #f36c21;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 12px; /* daha az yükseklik */
+    border-radius: 8px;
     text-transform: uppercase;
-}
-.footer-icons {
-    margin-top: 12px;
-}
-.footer-icons a {
-    margin: 0 8px;
-    display: inline-block;
-}
-.footer-icons svg {
-    width: 22px;
-    height: 22px;
-    fill: #fff;
-    transition: 0.2s;
-}
-.footer-icons a:hover svg {
-    fill: #f4f1ec; /* hover'da açık bej */
 }
 
 @media (max-width: 480px) {
@@ -139,7 +121,7 @@ body {
     .icon { width: 50px; height: 50px; }
     .title { font-size: 17px; }
     .subtitle { font-size: 14px; }
-    .footer { font-size: 18px; letter-spacing: 5px; }
+    .footer { font-size: 18px; letter-spacing: 5px; padding: 10px; }
 }
 </style>
 </head>
@@ -153,10 +135,21 @@ body {
         DESIGN • CREATE • BUILD
     </div>
 
+    <!-- İskender Pala Linki -->
     <a class="link" href="https://www.instagram.com/usakiskenderpalaihk/" target="_blank">
         <div class="icon">
-            <!-- Book SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 2H10C7.79 2 6 3.79 6 6v14c0 1.1.9 2 2 2h11V2zM8 6c0-1.1.9-2 2-2h7v14H8V6z"/></svg>
+            <!-- Renkli Instagram SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <defs>
+                    <linearGradient id="IGgrad1" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#f58529"/>
+                        <stop offset="30%" stop-color="#feda77"/>
+                        <stop offset="60%" stop-color="#dd2a7b"/>
+                        <stop offset="100%" stop-color="#8134af"/>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#IGgrad1)" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+            </svg>
         </div>
         <div class="text">
             <div class="title">İskender Pala İl Halk Kütüphanesi</div>
@@ -165,10 +158,21 @@ body {
         <div class="arrow">›</div>
     </a>
 
+    <!-- Motu Maker Linki -->
     <a class="link" href="https://www.instagram.com/motu_maker/" target="_blank">
         <div class="icon">
-            <!-- Circle SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            <!-- Renkli Instagram SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <defs>
+                    <linearGradient id="IGgrad2" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#f58529"/>
+                        <stop offset="30%" stop-color="#feda77"/>
+                        <stop offset="60%" stop-color="#dd2a7b"/>
+                        <stop offset="100%" stop-color="#8134af"/>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#IGgrad2)" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+            </svg>
         </div>
         <div class="text">
             <div class="title">Motu Maker</div>
@@ -179,14 +183,6 @@ body {
 
     <div class="footer">
         OKAN ÖZDENİZ
-        <div class="footer-icons">
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/motu_maker/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-                </svg>
-            </a>
-        </div>
     </div>
 
 </div>
