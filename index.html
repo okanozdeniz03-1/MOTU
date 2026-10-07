@@ -13,8 +13,8 @@
 
 body {
     margin: 0;
-    background: linear-gradient(to bottom, #1c1c1c 0%, #4a4a4a 100%); /* sade antrasit gradient, alt ton biraz daha açık */
-    color: #fff; /* yazılar beyaz */
+    background: linear-gradient(to bottom, #1c1c1c 0%, #4a4a4a 100%);
+    color: #fff;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -29,14 +29,15 @@ body {
 .logo {
     display: block;
     width: 100%;
-    margin-bottom: 18px;
+    max-width: 320px; /* logo için sınır */
+    margin: 0 auto 18px;
     border-radius: 18px;
-    box-shadow: 0 0 12px rgba(255,255,255,0.4); /* beyaz gölge */
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
     transition: 0.2s;
 }
 .logo:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 18px rgba(255,255,255,0.6); /* hover'da daha belirgin beyaz */
+    box-shadow: 0 0 18px rgba(255,255,255,0.6);
 }
 
 .tagline {
@@ -75,11 +76,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 2px solid #f36c21; /* turuncu çerçeve */
-    background: #fff;           /* beyaz arka plan */
+    border: 2px solid #f36c21;
+    background: #fff;
 }
 .icon svg {
-    width: 56px;   /* büyütülmüş ikon */
+    width: 56px;
     height: 56px;
 }
 
@@ -106,14 +107,13 @@ body {
 
 .footer {
     margin-top: 55px;
-    font-size: 16px;       /* daha küçük, zarif boyut */
-    letter-spacing: 8px;   /* harfler aralıklı */
-    font-weight: 300;      /* ince font ağırlığı */
-    color: #fff;           /* beyaz yazı */
-    background: none;
-    padding: 0;
-    border-radius: 0;
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    color: #fff;
     text-transform: uppercase;
+    border-top: 1px solid #f36c21;
+    padding-top: 12px;
 }
 </style>
 </head>
@@ -127,33 +127,9 @@ body {
         DESIGN • CREATE • BUILD
     </div>
 
-    <!-- İskender Pala Linki -->
-    <a class="link" href="https://www.instagram.com/usakiskenderpalaihk/" target="_blank">
-        <div class="icon">
-            <!-- Renkli Instagram SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <defs>
-                    <linearGradient id="IGgrad1" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#f58529"/>
-                        <stop offset="30%" stop-color="#feda77"/>
-                        <stop offset="60%" stop-color="#dd2a7b"/>
-                        <stop offset="100%" stop-color="#8134af"/>
-                    </linearGradient>
-                </defs>
-                <path fill="url(#IGgrad1)" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-            </svg>
-        </div>
-        <div class="text">
-            <div class="title">İskender Pala İl Halk Kütüphanesi</div>
-            <div class="subtitle">Instagram</div>
-        </div>
-        <div class="arrow">›</div>
-    </a>
-
     <!-- Motu Maker Linki -->
-    <a class="link" href="https://www.instagram.com/motu_maker/" target="_blank">
+    <a class="link" href="https://www.instagram.com/motu_maker/" target="_blank" aria-label="Motu Maker Instagram">
         <div class="icon">
-            <!-- Renkli Instagram SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <defs>
                     <linearGradient id="IGgrad2" x1="0" y1="0" x2="1" y2="1">
